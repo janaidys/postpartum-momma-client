@@ -10,15 +10,15 @@ const Login = () => {
               <span className="login-form-title ">LOGIN</span>
 
               <span className="wrap-input">
-                <input class="input" type="text" name="email" />
-                <span class="focus-input"></span>
-                <span class="label-input">Email</span>
+                <input className="input" type="text" name="email" />
+                <span className="focus-input"></span>
+                <span className="label-input">Email</span>
               </span>
 
               <span className="wrap-input" data-validate="Password is required">
-                <input class="input" type="password" name="pass" />
-                <span class="focus-input"></span>
-                <span class="label-input">Password</span>
+                <input className="input" type="password" name="pass" />
+                <span className="focus-input"></span>
+                <span className="label-input">Password</span>
               </span>
 
               <span>
@@ -29,13 +29,13 @@ const Login = () => {
                     type="checkbox"
                     name="remember-me"
                   />
-                  <label class="label-checkbox" for="ckb1">
+                  <label className="label-checkbox" for="ckb1">
                     Remember me
                   </label>
                 </span>
 
                 <span>
-                  <a href="#" class="txt1">
+                  <a href="#" className="txt1">
                     Forgot Password?
                   </a>
                 </span>
@@ -46,7 +46,7 @@ const Login = () => {
               </span>
 
               <span className="sign-up">
-                <a href="#" class="txt2">
+                <a href="#" className="txt2">
                   Join our Community!
                 </a>
               </span>

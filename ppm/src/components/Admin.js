@@ -6,12 +6,12 @@ const Admin = () => {
         <span className="container1">
     
     <span className="table-title">
-    <h1 class="admin-header">ADMIN PAGE</h1>
-    <button class="edit-button" type="submit">ADD A NEW BLOG POST</button>
+    <h1 className="admin-header">ADMIN PAGE</h1>
+    <button className="edit-button" type="submit">ADD A NEW BLOG POST</button>
 </span>
     
 <span>
-<table class="blog-post-table">
+<table className="blog-post-table">
 <thead>  
     <tr>
         <th>BLOG POST TITLE</th>
@@ -23,23 +23,23 @@ const Admin = () => {
 <tbody>
 <tr>
 <td>Bedtime Routine</td>
-<td><button class="edit-button" type="submit">EDIT</button></td>
-<td><button class="delete-button" type="submit">DELETE</button></td>
+<td><button className="edit-button" type="submit">EDIT</button></td>
+<td><button className="delete-button" type="submit">DELETE</button></td>
 </tr>
 <tr>
 <td>Fed is Best</td>
-<td><button class="edit-button" type="submit">EDIT</button></td>
-<td><button class="delete-button" type="submit">DELETE</button></td>
+<td><button className="edit-button" type="submit">EDIT</button></td>
+<td><button className="delete-button" type="submit">DELETE</button></td>
 </tr>
 <tr>
 <td>Our Favorite Playkits</td>
-<td><button class="edit-button" type="submit">EDIT</button></td>
-<td><button class="delete-button" type="submit">DELETE</button></td>
+<td><button className="edit-button" type="submit">EDIT</button></td>
+<td><button className="delete-button" type="submit">DELETE</button></td>
 </tr>
 <tr>
 <td>Healing your Core Postpartum</td>
-<td><button class="edit-button" type="submit">EDIT</button></td>
-<td><button class="delete-button" type="submit">DELETE</button></td>
+<td><button className="edit-button" type="submit">EDIT</button></td>
+<td><button className="delete-button" type="submit">DELETE</button></td>
 </tr>
 
 </tbody>

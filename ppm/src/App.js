@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import { Routes, Route } from "react-router-dom";
 
 import Header from './shared/Header';
 import Home from './components/Home';
@@ -17,13 +18,15 @@ const [user, setUser] = useState({})
   return (
     <div className="App">
       <Header user={user}setUser={setUser}/>
-      <Home/>
-      <About/>
-      <Admin/>
-      <Create/>
-      <Update/>
-      <Login user={user}setUser={setUser}/>
-      <Signup user={user}setUser={setUser}/>
+      <Routes>
+      <Route path="/" element= {<Home/>}/>
+      <Route path="/about" element= {<About/>}/>
+      <Route path="/admin" element= {<Admin/>}/>
+      <Route path="/create" element= {<Create/>}/>
+      <Route path="/update" element= {<Update/>}/>
+      <Route path="/login" element= {<Login user={user}setUser={setUser}/>}/>
+      <Route path="/signup" element= {<Signup user={user}setUser={setUser}/>}/>
+      </Routes>
       <Footer/>
     </div>
   );

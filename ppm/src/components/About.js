@@ -15,7 +15,7 @@ const About = () => {
     <span className="team-blurb">
         <span className="name-photo">
             <span className="momma-photo">
-            <img src=".images/aj-maternity.jpg" class="anaidys-photo" alt="anaidys'-pic"/>
+            <img src="./images/aj-maternity.jpg" className="anaidys-photo" alt="anaidys'-pic"/>
         </span>
             <h3>Anaidys Jimenez</h3>
         </span>
@@ -27,7 +27,7 @@ const About = () => {
     <span className="team-blurb">
     <span className="name-photo">
         <span className="momma-photo">
-        <img src="./public/images/mayreny-photo.jpeg" class="mayreny-photo"
+        <img src="./images/mayreny-photo.jpeg" className="mayreny-photo"
         alt="mayreny's-pic"/>
         </span>
     <h3>Mayreny Miralda</h3>

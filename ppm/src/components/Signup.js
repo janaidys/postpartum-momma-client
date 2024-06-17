@@ -31,7 +31,7 @@ const Signup = () => {
 					
 					
 					<span className="wrap-input" data-validate="Password is required">
-						<input class="input" type="password" name="pass"/>
+						<input className="input" type="password" name="pass"/>
 						<span className="focus-input"></span>
 						<span className="label-input">Password</span>
 					</span>
@@ -47,7 +47,7 @@ const Signup = () => {
 
 				
                     <span className="sign-up">
-						<a href="#" class="txt2">
+						<a href="#" className="txt2">
 							Already a member? Log In
                         </a>
 					</span>

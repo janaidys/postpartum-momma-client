@@ -5,14 +5,14 @@ const Create = () => {
       <div>
         <span className="container1">
         <h1 className="page-title">Create Blog Post</h1>
-        <span class="banner">
+        <span className="banner">
             <input type="file" accept="image/*" id="banner-upload" hidden/>
-            <label for="banner-upload" class="banner-upload-btn"><i class="fa fa-upload" aria-hidden="true"></i></label>
+            <label for="banner-upload" className="banner-upload-btn"><i className="fa fa-upload" aria-hidden="true"></i></label>
         </span>
         <br/>
         <span className="blog">
-            <textarea type="text" class="title" placeholder="Blog title..."></textarea>
-            <textarea type="text" class="article" placeholder="Start writing here..."></textarea>
+            <textarea type="text" className="title" placeholder="Blog title..."></textarea>
+            <textarea type="text" className="article" placeholder="Start writing here..."></textarea>
         </span>
 
         <span className="blog-options">

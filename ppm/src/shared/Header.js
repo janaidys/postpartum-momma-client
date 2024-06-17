@@ -16,15 +16,15 @@ const Header = () => {
                 <ul>
 
                     
-                    <li class=" nav-list"><a href="#">HOME</a></li>
+                    <li className=" nav-list"><a href="#">HOME</a></li>
 
             
-                    <li class=" nav-list"><a href="#">ABOUT US </a></li>
+                    <li className=" nav-list"><a href="#">ABOUT US </a></li>
 
                 </ul>
             </nav>
           
-            <i class="fa-solid fa-bars"></i>
+            <i className="fa-solid fa-bars"></i>
         </header>
       </div>
     )
