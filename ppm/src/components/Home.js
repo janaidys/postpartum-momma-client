@@ -7,6 +7,7 @@ const Home = () => {
     fetch(`https://postpartum-momma.onrender.com/api/blog`)
     .then((response) => response.json())
     .then((result) => {
+      console.log(result)
       if (result.statusCode === 200) {
         setPosts(result.data)
       }
@@ -24,7 +25,7 @@ const Home = () => {
           {posts.map((post) => (
             <div key={posts.post_id}className="blog-card">
             <img
-              src={`./images/${post.banner}`}
+              src={`/images/${post.banner}`}
               className="blog-image"
               alt={`${post.title}`}
           
