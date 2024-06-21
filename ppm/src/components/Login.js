@@ -1,12 +1,31 @@
 import React from "react";
+import { useNavigate } from "react-router-dom"
 
-const Login = () => {
+const Login = ({user, setUser}) => {
+  const navigate = useNavigate();
+
+  const handleLoginSubmit = (event) => {
+    event.preventDefault();
+    console.log("This method ran...")
+    const body = {
+      email:event.target.email.value,
+      password: event.target.password.value
+    }
+  }
+  fetch(`https://postpartum-momma.onrender.com/api/blog/login/local`, {
+        method: "POST",
+        body: JSON.stringify
+      })
+        .then((response) => response.json())
+        .then((result) => console.log(result), navigate("/admin"))
+        .catch((error)=> console.log(error))
+  
   return (
     <div>
       <span className="limiter">
         <span className="container-login">
           <span className="wrap-login">
-            <form className="login-form">
+            <form className="login-form" onSubmitt={handleLoginSubmit}>
               <span className="login-form-title ">LOGIN</span>
 
               <span className="wrap-input">
