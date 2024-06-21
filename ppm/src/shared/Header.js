@@ -10,16 +10,16 @@ const Header = () => {
             alt="postpartum-momma-logo"/></a>
         </span>
 
-            
-            <a className= "login" href="#">LOGIN/SIGN UP</a>
     
                 <ul>
-
-                    
                     <li className=" nav-list"><a href="#">HOME</a></li>
 
             
                     <li className=" nav-list"><a href="#">ABOUT US </a></li>
+
+                    <li className ="nav-list"><a href="#">LOGIN</a></li>
+
+                    <li className ="nav-list"><a href="#">SIGN UP</a></li>
 
                 </ul>
             </nav>

@@ -11,61 +11,22 @@ const About = () => {
 </span>
 </span>
 
-{/* < span className="about-us"> 
+<span class="about-us"> 
     <h2>Meet the Team</h2>
     {bioData.map((bio) => (
-    <span className="team-blurb">
-            <span className="name-photo">
-                <span className="momma-photo">
-                    <img src= {`./images/${bio.image}`} className="anaidys-photo" alt={bio.name}/>
-                </span>
-
-                    <h3>{`${bio.name}`}</h3>
-                 
-                    <p> {bio.bio}</p>
-    </span>
-
-</span>
-</span>
-))} */}
-       
-    {/* <span className="team-blurb">
+        <span className="team-blurb">
         <span className="name-photo">
             <span className="momma-photo">
-            <img src= "./images/aj-maternity.jpg" className="anaidys-photo" alt="anaidys'-pic"/>
+            <img src={`/images/${bio.image}`} className="anaidys-photo" alt={bio.name}/>
         </span>
-            <h3>Anaidys Jimenez</h3>
+            <h3>{bio.name}</h3>
         </span>
         <span>
-        <p> In November of 2023, I became a mother to a beautiful baby boy named Luca Elias. I'm on an exclusively breastfeeding journey and hoping to stay the course for as long as my body allows. I am currently on maternity leave, but will soon be returning to my job as a Lead Geometry Teacher at my alma mater high school. </p>
+        <p> {bio.bio} </p>
         </span>
-    </span> */}
-
-    {/* <span className="team-blurb">
-    <span className="name-photo">
-        <span className="momma-photo">
-        <img src="./images/mayreny-photo.jpeg" className="mayreny-photo"
-        alt="mayreny's-pic"/>
-        </span>
-    <h3>Mayreny Miralda</h3>
-    </span>
-    
-    
-    <p> In December of 2022, I became a mom to the sweetest baby girl, Jael Elise. I breastfed until about 7 months, when I returned to work part - time. When not spending time running after my toddler, I am completing my master/'s in ABA, and working at a behavioral clinic. I am grateful for the support of my partner and family members to be able to continue my studies while juggling motherhood and my career. </p>
-    </span> */}
-
-    {/* <span className="team-blurb">
-        <span className="name-photo">
-            <span className="momma-photo">
-            <img src="./images/tatiana-photo.JPEG" className="tatiana-photo"
-        alt="tatiana's-pic"/>
-        </span>
-        <h3>Tatiana Marquez</h3>
-        </span>
-        <p> I am a mother of two. My daughter, Sequoia, just turned four and my son, Shiloh, is one. They mean everything to me. Outside of motherhood some of my favorite things to do include crocheting, photography and painting.  </p>
-    </span> */}
-{/* </span> */}
-
+</span>
+    ))}
+</span>
 
 <span className="beliefs">
     <h2>Our Beliefs</h2>
@@ -94,5 +55,6 @@ const About = () => {
       </div>
     )
   }
+
 
 export default About;
