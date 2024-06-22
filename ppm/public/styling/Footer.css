@@ -1,0 +1,38 @@
+.footer {
+    background-color: var(--forest-green);
+    width: 100%;
+    margin: 0 auto;
+}
+
+.postpartum-momma-footer-logo {
+    width: 175px;
+    position:relative;
+    bottom:15px;
+    left:  40px;
+}
+
+.footer-quote {
+    font-family: "Ephesis", cursive; 
+    font-size: 1.8rem;
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+    /* left: 90px; */
+    color: var(--sage);
+
+}
+
+.row-text-footer {
+    display: flex; 
+    justify-content: space-evenly;
+    padding-top: 50px;
+
+}
+.footer-text {
+    font-family: "Dosis", sans-serif;
+    display: inline-block;
+    color: var(--sage);
+    text-align: center; 
+    
+}
+

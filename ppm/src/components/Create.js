@@ -29,7 +29,7 @@ const Create = () => {
         <h1 className="page-title">Create Blog Post</h1>
         <span className="banner">
             <input type="file" accept="image/*" id="banner-upload" hidden/>
-            <label for="banner-upload" className="banner-upload-btn"><i className="fa fa-upload" aria-hidden="true"></i></label>
+            <label htmlFor="banner-upload" className="banner-upload-btn"><i className="fa fa-upload" aria-hidden="true"></i></label>
         </span>
         <br/>
         <span className="blog">

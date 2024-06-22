@@ -1,13 +1,23 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  --forest-green:#344e41;
+  --sage: #a3b18a;
+  --cream: #eae6e0;
+  --dark-green: #111d13;
+  --white: #ffffff;
+
+  /* set height to 100% to keep gradient background from repeating in react */
+  height: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  background-image: linear-gradient(var(--cream), var(--sage));
+  font-family: 'Dosis', sans-serif;    
 }

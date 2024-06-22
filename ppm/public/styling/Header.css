@@ -1,0 +1,44 @@
+
+.pm-logo {
+    width: 250px;
+}
+
+header {
+    background-color: var(--cream);
+    font-family: "Dosis", sans-serif; 
+    border-bottom: solid 2px var(--forest-green);
+    width: 100%;
+    
+}
+ 
+.nav-list {
+    display: inline-block;
+    margin: 0 110px; 
+    padding-bottom: 10px;
+    
+}
+
+li a {
+
+    text-decoration: none;
+    color: var(--dark-green);
+}
+
+.login {
+    display:block;
+    position: absolute;
+    top: 55px;
+    right: 25px;
+    text-decoration: none;
+    color: var(--dark-green)
+
+}
+
+.fa-bars {
+    display:block;
+    position: absolute;
+    top: 75px;
+    right:65px;
+    color: var(--sage)
+
+}

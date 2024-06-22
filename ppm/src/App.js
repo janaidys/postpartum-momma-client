@@ -13,7 +13,7 @@ import Footer from './shared/Footer';
 
 function App() {
 
-const [user, setUser] = useState({})
+const [user, setUser] = useState(localStorage.getItem('user') || {})
 
   return (
     <div className="App">

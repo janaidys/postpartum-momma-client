@@ -48,7 +48,7 @@ const Login = ({user, setUser}) => {
                     type="checkbox"
                     name="remember-me"
                   />
-                  <label className="label-checkbox" for="ckb1">
+                  <label className="label-checkbox" htmlFor="ckb1">
                     Remember me
                   </label>
                 </span>
