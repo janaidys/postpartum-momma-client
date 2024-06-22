@@ -1,8 +1,8 @@
 import React from 'react';
-import "../../index.css";
-import "./Footer.css";
+import '..';
+import "../shared/";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import 
+import {faSquareFacebook, faPintrestSquare, faSquareInstagram} from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
     return (
@@ -22,13 +22,13 @@ const Footer = () => {
     <h3>FOLLOW US</h3>
         <span className="icons">
        
-        <a href="#"> <i className="fa-brands fa-square-facebook fa-2x"></i></a>
+        <a href="#"> <FontAwesomeIcon icon = {faSquareFacebook}/></a>
+        {/* </><i className="fa-brands fa-square-facebook fa-2x"></i> */}
         
-      
-        <a href="#"><i className="fa fa-pinterest-square fa-2x" aria-hidden="true"></i></a>
+        <a href="#"><FontAwesomeIcon icon="fa-brands fa-square-pinterest" /></a>
         
        
-        <a href="#"><i className="fa-brands fa-square-instagram fa-2x"></i></a>
+        <a href="#"><FontAwesomeIcon icon="fa-brands fa-square-instagram" /></a>
     </span>
 </span>
 <br/>
