@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+// import '../index';
+import '../Home.css'
 // import blogData from "../data/posts";
 
 const Home = () => {

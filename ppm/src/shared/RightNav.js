@@ -1,4 +1,7 @@
 import React from 'react';
+import '../index.css';
+import '../Header.css'
+import '../mediaQueries.css'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBars} from "@fortawesome/free-solid-svg-icons";
 

@@ -4,10 +4,22 @@
   [HEADER] */
   li a {
     display: none;
+    color: var(--forest-green);
+    
   }
   
   ul { 
     display: none;
+    /* display: flex; */
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    background-color: var(--sage);
+    position: fixed; 
+    top: 0; 
+    right: 0; 
+    height: 50vh; 
+    width: 250px;
+    
   }
   
   .pm-logo {
@@ -40,7 +52,6 @@
   
     
   }
-  
   
   .footer-quote {
     font-family: "Ephesis", cursive; 
@@ -187,10 +198,15 @@
   }
   
   /* [LAPTOP] */
-  @media screen and (min-width: 768px) and (max-width: 1024px){
+  @media screen and (min-width: 768px) {
     .playkit1 {
       width: 275px;
       
     }
   
+    .fa-bars {
+      display: none;
+  
+  }
+
   }

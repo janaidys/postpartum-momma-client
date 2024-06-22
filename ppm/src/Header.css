@@ -18,6 +18,12 @@ header {
     
 }
 
+ul {
+   display: flex; 
+   flex-flow: row nowrap;
+}
+
+
 li a {
 
     text-decoration: none;
