@@ -1,5 +1,5 @@
 import React from 'react';
-import RightNav from './shared/RightNav';
+// import RightNav from './shared/RightNav';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBars} from "@fortawesome/free-solid-svg-icons";
 
@@ -12,7 +12,7 @@ const Header = () => {
                 <a href="#"><img src="./images/Postpartum Momma Logo.png" className="pm-logo"
             alt="postpartum-momma-logo"/></a>
         </span>
-               <RightNav/>
+               {/* <RightNav/> */}
             </nav>
           
             <FontAwesomeIcon icon = {faBars}/>
