@@ -1,6 +1,4 @@
 import React from 'react';
-import "";
-import "";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBars} from "@fortawesome/free-solid-svg-icons";
 
@@ -28,7 +26,7 @@ const Header = () => {
                 </ul>
             </nav>
           
-            <i className="fa-solid fa-bars"></i>
+            <FontAwesomeIcon icon = {faBars}/>
         </header>
       </div>
     )

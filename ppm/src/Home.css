@@ -1,0 +1,56 @@
+.blogs-section {
+    width: 100%; 
+    padding: 50px 5vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:  80px;
+  }
+  
+  .blog-card {
+    border: var(--forest-green) 3px solid;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .blog-image {
+    width: 100%;
+    height: 250px; 
+    object-fit: cover;
+    border-radius: 10px; 
+    margin-bottom: 10px; 
+  }
+  
+  .blog-title {
+    font-family: "Ephesis", cursive; 
+    font-size: 2rem;
+    color:  var(--sage)
+  }
+  
+  .blog-overview { 
+    margin: 10px 0 20px; 
+    line-height: 30px;
+  }
+  
+  .blog-button { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    width: 10%;
+    height: 30px;
+    border-radius: 10px;
+    background: var(--forest-green);
+  
+    font-family: "Dosis", sans-serif;
+    font-size: 15px;
+    color: var(--white);
+    line-height: 1.2;
+    letter-spacing: 1px;
+  
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  
+  }
+  

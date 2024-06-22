@@ -1,0 +1,93 @@
+.table-title {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  
+  .admin-header {
+    font-family: "Dosis", sans-serif;
+    font-size: 3.5rem;
+    color: var(--sage)
+  }
+  
+  .blog-post-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1.3em;
+    width:100%;
+  
+  }
+  
+  .blog-post-table thead tr{ 
+    border: var(--forest-green) 2px solid;
+    text-align: center;
+  }
+  
+  .blog-post-table td {
+    padding: 5px;
+    border: var(--forest-green) 2px solid;
+  }
+  
+  .edit-button {
+    background:var(--forest-green);
+    margin-left: 20px;
+    font-size: 14px;
+    padding: 0 20px;
+    width: fit-text;
+    height: 40px;
+    border-radius: 10px;
+    background: var(--forest-green);
+  
+    font-family: "Dosis", sans-serif;
+    font-size: 15px;
+    color: var(--white);
+    line-height: 1.2;
+    letter-spacing: 1px;
+    cursor: pointer;
+    
+  
+  }
+  
+  .delete-button {
+    background:var(--forest-green);
+    margin-left: 20px;
+    font-size: 14px;
+    padding: 0 20px;
+    width: fit-text;
+    height: 40px;
+    border-radius: 10px;
+    background: var(--sage);
+  
+    font-family: "Dosis", sans-serif;
+    font-size: 15px;
+    color: var(--white);
+    line-height: 1.2;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+  
+  
+  /* -------------------------------------------------
+  [LINK STYLING} */
+  /* unvisited link */
+  a:link {
+      color:var(--dark-green)   
+   }
+  
+    /* visited link */
+  a:visited {
+      color: var(--forest-green);
+  
+  }
+  
+   /* mouse over link */
+  a:hover {
+      font-weight:bold;
+      color:var(--sage)  
+  }
+  
+   /* selected link */
+  a:active {
+      font-weight:bold;
+      color: var(--forest-green);
+      background-color: var(--sage);  
+  }

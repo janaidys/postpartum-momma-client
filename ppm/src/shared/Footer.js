@@ -1,8 +1,7 @@
 import React from 'react';
-import '..';
-import "../shared/";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faSquareFacebook, faPintrestSquare, faSquareInstagram} from "@fortawesome/free-solid-svg-icons";
+import {faSquareFacebook, faPinterestSquare, faSquareInstagram} from "@fortawesome/free-brands-svg-icons";
+import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
     return (
@@ -13,7 +12,7 @@ const Footer = () => {
 <span className="footer-text">
     <h3> CONTACT US</h3>
     
-    <a href="mailto:ppmomma@gmail.com"><i className="fa-regular fa-envelope fa-2x"></i></a>
+    <a href="mailto:ppmomma@gmail.com"><FontAwesomeIcon icon = {faEnvelope}/></a>
 
 </span>
 <br/>
@@ -23,12 +22,12 @@ const Footer = () => {
         <span className="icons">
        
         <a href="#"> <FontAwesomeIcon icon = {faSquareFacebook}/></a>
-        {/* </><i className="fa-brands fa-square-facebook fa-2x"></i> */}
+    
         
-        <a href="#"><FontAwesomeIcon icon="fa-brands fa-square-pinterest" /></a>
+        <a href="#"><FontAwesomeIcon icon={faPinterestSquare}/></a>
         
        
-        <a href="#"><FontAwesomeIcon icon="fa-brands fa-square-instagram" /></a>
+        <a href="#"><FontAwesomeIcon icon={faSquareInstagram} /></a>
     </span>
 </span>
 <br/>
