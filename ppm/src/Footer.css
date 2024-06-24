@@ -1,4 +1,4 @@
-.footer {
+footer {
     background-color: var(--forest-green);
     width: 100%;
     margin: 0 auto;
@@ -24,15 +24,48 @@
 
 .row-text-footer {
     display: flex; 
+    flex-direction: column;
     justify-content: space-evenly;
     padding-top: 50px;
 
 }
+
+.footer-row{
+    width: 100%;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 .footer-text {
     font-family: "Dosis", sans-serif;
     display: inline-block;
     color: var(--sage);
     text-align: center; 
     
+}
+
+/* unvisited link */
+.icons a:link {
+    color:var(--dark-green)   
+ }
+
+  /* visited link */
+.icons a:visited {
+    color: var(--forest-green);
+
+}
+
+ /* mouse over link */
+.icons a:hover {
+    font-weight:bold;
+    color:var(--sage);
+}
+
+ /* selected link */
+.icons a:active {
+    font-weight:bold;
+    color: var(--forest-green);
+    background-color: var(--sage);  
 }
 

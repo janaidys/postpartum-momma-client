@@ -37,7 +37,7 @@
   }
   
   .title,
-  .article{
+  .article, .blurb{
     width: 100%;
     min-height: 50px;
     height: auto;
@@ -52,8 +52,18 @@
   }
   
   .title::placeholder,
-  .article::placeholder{
+  .article::placeholder, .blurb::placeholder{
     color: var(--dark-green);
+  }
+
+  .blurb {
+    height: 150px;
+    font-size: 20px;
+    margin-top: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    padding-bottom: 100px;
+    white-space: pre-wrap;
   }
   
   .article{

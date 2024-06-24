@@ -1,10 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import RightNav from './RightNav';
 import { useNavigate } from "react-router-dom";
 import '../index.css';
 import '../Header.css'
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faBars} from "@fortawesome/free-solid-svg-icons";
+
 
 const Header = ({user, setUser}) => {
   const navigate = useNavigate();
@@ -22,8 +22,8 @@ const Header = ({user, setUser}) => {
         <header>
             <nav>
         <span className="header-logo">
-                <a href="#"><img src="./images/Postpartum Momma Logo.png" className="pm-logo"
-            alt="postpartum-momma-logo"/></a>
+                <Link><img src="./images/Postpartum Momma Logo.png" className="pm-logo"
+            alt="postpartum-momma-logo"/></Link>
         </span>
                <RightNav/>
             </nav>

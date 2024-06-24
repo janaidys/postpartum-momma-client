@@ -1,8 +1,13 @@
 import React, { useState, useEffect } from "react";
+import {Link, useNavigate} from 'react-router-dom';
 // import '../index';
 import '../Home.css'
 
-const Home = () => {
+const Home = (props) => {
+  const navigate = useNavigate();
+  const toPosts = (post) => {
+    navigate(`/post`, {state:post, replace:true})
+  }
   const [posts, setPosts] = useState([]);
   useEffect(()=> { 
     fetch(`https://postpartum-momma.onrender.com/api/blog`)
@@ -21,10 +26,10 @@ const Home = () => {
 
   return (
     <div>
-      <span className="container1">
+      <div className="container1">
         <span className="blogs-section">
           {posts.map((post) => (
-            <div key={posts.post_id}className="blog-card">
+            <div key={post.post_id}className="blog-card">
             <img
               src={`/images/${post.banner}`}
               className="blog-image"
@@ -35,13 +40,13 @@ const Home = () => {
             <p className="blog-overview">
               {post.blurb}
             </p>
-            <button className="blog-button">READ</button>
+            <button onClick={() => {toPosts(post)}}className="blog-button">READ</button>
           </div>
           ))}
           
         
         </span>
-      </span>
+      </div>
     </div>
   );
 };

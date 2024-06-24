@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom"
+import { Link } from 'react-router-dom'
 import '../Login.css';
 
 const Login = ({user, setUser}) => {
@@ -66,10 +67,12 @@ const Login = ({user, setUser}) => {
               </span>
 
               <span className="sign-up">
-                <a href="#" className="txt2">
+                <Link to="/signup" className="txt2" >
                   Join our Community!
-                </a>
+                </Link>
               </span>
+              
+
             </form>
 
             <span

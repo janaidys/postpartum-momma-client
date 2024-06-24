@@ -1,5 +1,7 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
+import { Link } from 'react-router-dom'
+
 
 const Signup = ({user, setUser}) => {
 	const navigate = useNavigate();
@@ -68,9 +70,9 @@ const Signup = ({user, setUser}) => {
 
 				
                     <span className="sign-up">
-						<a href="#" className="txt2">
+						<Link className="txt2">
 							Already a member? Log In
-                        </a>
+                        </Link>
 					</span>
 
 				</form>

@@ -18,8 +18,6 @@ const bios = [
 
 
 
-
-  
-  module.exports = {bios};
+  module.exports = bios;
   
   

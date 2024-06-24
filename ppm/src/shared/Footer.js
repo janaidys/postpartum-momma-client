@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../index.css';
 import '../Footer.css';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
@@ -6,15 +7,13 @@ import {faSquareFacebook, faPinterestSquare, faSquareInstagram} from "@fortaweso
 import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
 
 
-
-
-
 const Footer = () => {
     return (
       <div>
         <footer>
-<span className="row-text-footer">
+<div className="row-text-footer">
 
+<div className="footer-row">
 <span className="footer-text">
     <h3> CONTACT US</h3>
     
@@ -22,33 +21,34 @@ const Footer = () => {
 
 </span>
 <br/>
-
 <span className="footer-text">
     <h3>FOLLOW US</h3>
         <span className="icons">
        
-        <a href="#"> <FontAwesomeIcon icon = {faSquareFacebook}/></a>
+        <a href="#"> <FontAwesomeIcon className= "icons" icon = {faSquareFacebook}/></a>
     
         
-        <a href="#"><FontAwesomeIcon icon={faPinterestSquare}/></a>
+        <a href="#"><FontAwesomeIcon className="icons" icon={faPinterestSquare}/></a>
         
        
-        <a href="#"><FontAwesomeIcon icon={faSquareInstagram} /></a>
+        <a href="#"><FontAwesomeIcon className="icons" icon={faSquareInstagram} /></a>
     </span>
 </span>
 <br/>
 
 
 <span className=" footer-logo">
-    <a target="_blank" rel="noopener noreferrer" href="#"><img src="./images/pm-footer-logo.png" alt="pm-footer-logo" className="postpartum-momma-footer-logo"/></a>
+    <Link to="/"><img src="./images/pm-footer-logo.png" alt="pm-footer-logo" className="postpartum-momma-footer-logo"/></Link>
 </span>
+</div>
 
+<br/>
 
-<span className=" footer-quote">
+<div className="footer-quote">
     <h4>"Empowering Motherhood Journeys"</h4>
-</span>
+</div>
 
-</span>
+</div>
 </footer>  
       </div>
     )
