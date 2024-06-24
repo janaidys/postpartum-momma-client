@@ -1,6 +1,6 @@
-import React, {useState} from 'react';
+import React from 'react';
 import RightNav from './RightNav';
-import {useNavigate} from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 import '../index.css';
 import '../Header.css'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
@@ -8,15 +8,14 @@ import {faBars} from "@fortawesome/free-solid-svg-icons";
 
 const Header = ({user, setUser}) => {
   const navigate = useNavigate();
-  const [toggleHamburger, setToggleHamburger] = useState(true);
-  const ToggleClassName = () => {
-    setToggleHamburger(!toggleHamburger);
-  };
 
-  const handleLogout = () => {
-    fetch(`https://postpartum-momma.onrender.com/api/blog/logout`, {
-      method: "GET"
+  const handleLogout = (event) => {
+    fetch(`https://postpartum-momma.onrender.com/api/blog/admin`, {
+      method: "GET",
     })
+      .then((response) => response.json())
+      .then((result) => setUser({}), localStorage.removeItem("user"), navigate("/"))
+      .catch((error)=> navigate("/admin"))
   }
     return (
       <div>
@@ -29,7 +28,7 @@ const Header = ({user, setUser}) => {
                <RightNav/>
             </nav>
           
-            <FontAwesomeIcon icon = {faBars}/>
+            
         </header>
       </div>
     )

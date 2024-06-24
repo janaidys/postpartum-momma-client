@@ -48,3 +48,29 @@ li a {
     color: var(--sage)
 
 }
+
+/* -------------------------------------------------
+[LINK STYLING} */
+/* unvisited link */
+a:link {
+    color:var(--dark-green)   
+ }
+
+  /* visited link */
+a:visited {
+    color: var(--forest-green);
+
+}
+
+ /* mouse over link */
+a:hover {
+    font-weight:bold;
+    color:var(--sage)  
+}
+
+ /* selected link */
+a:active {
+    font-weight:bold;
+    color: var(--forest-green);
+    background-color: var(--sage);  
+}

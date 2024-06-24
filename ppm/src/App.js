@@ -24,10 +24,13 @@ const [user, setUser] = useState(localStorage.getItem('user') || {})
       <Route path="/admin" element= {<Admin/>}/>
       <Route path="/create" element= {<Create/>}/>
       <Route path="/update" element= {<Update/>}/>
+      </Routes>
+      <Footer/>
+      
+      <Routes>
       <Route path="/login" element= {<Login user={user}setUser={setUser}/>}/>
       <Route path="/signup" element= {<Signup user={user}setUser={setUser}/>}/>
       </Routes>
-      <Footer/>
     </div>
   );
 }

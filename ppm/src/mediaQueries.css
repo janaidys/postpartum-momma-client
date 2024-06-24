@@ -3,22 +3,35 @@
     /* --------------------------------------------------
   [HEADER] */
   li a {
-    display: none;
+    /* display: none; */
     color: var(--forest-green);
     
   }
-  
+  .dropdown-menu.active {
+    opacity: 1; 
+    visibility: visible;
+    transform: translateY(0);
+    transition: 0.5;
+  }
+  .dropdown-menu.inactive {
+    opacity: 0; 
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: 0.5;
+  }
+
   ul { 
-    display: none;
-    /* display: flex; */
+    /* display: none; */
+    display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
-    background-color: var(--sage);
+    background-color: var(--cream);
     position: fixed; 
-    top: 0; 
-    right: 0; 
+    top: 50px; 
+    right: 30px; 
     height: 50vh; 
     width: 250px;
+    border-radius: 5px;
     
   }
   
