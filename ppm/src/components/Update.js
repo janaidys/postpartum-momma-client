@@ -8,10 +8,13 @@ import {faUpload} from "@fortawesome/free-solid-svg-icons";
 const Update = ({}) => {
   const navigate = useNavigate();
   const {postID} = useParams();
+  
   const [post, setPost] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:3000/api/blog/edit/${postID}`, {
+    fetch(`http://localhost:3000/api/blog/edit/:id`, {
   method: "GET",
+  'Content-Type':
+        'application/json'
 })
   .then((response) => response.json())
   .then((result) => setPost(result.data))
@@ -28,13 +31,16 @@ const handleUpdateSubmit = (event) => {
       article: event.target.article.value,
       upload: event.target.upload.value
       }
-      fetch(`https://postpartum-momma.onrender.com/api/blog/${postID}`, {
+      console.log(body);
+      fetch(`https://postpartum-momma.onrender.com/api/blog/${postID}`
+      , {
         method: "PUT",
         body: JSON.stringify(body)
       })
         .then((response) => response.json())
         .then((result) => console.log(result), navigate("/admin"))
         .catch((error)=> console.log(error))
+        console.log(postID)
 }
 return (
       <div>
