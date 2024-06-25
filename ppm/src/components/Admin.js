@@ -7,8 +7,8 @@ const Admin = (props) => {
   const toCreate = () => {
     navigate(`/create`)
   }
-  const  toEdit = (post) => {
-    navigate('/update', {state:post, replace:true})
+  const  toEdit = (postID) => {
+    navigate(`/edit/${postID}`)
   }
   const [posts, setPosts] = useState([]);
   useEffect(() => { 
@@ -26,12 +26,13 @@ const Admin = (props) => {
   }, [posts]);
 
   function DeletePost(postID) {
-    fetch(`https://codesquad-comics-rzef.onrender.com/api/blog/delete/${postID}`, {
+    fetch(`http://localhost:3000/api/blog/delete/${postID}`, {
     method: "DELETE",
   })
     .then((response) => response.json())
     .then((result) => console.log(result))
     .catch((error)=> console.log(error))
+    navigate("/admin")
 
 }
 
@@ -56,11 +57,11 @@ const Admin = (props) => {
 
 <tbody>
   {posts.map((post) => ( 
-<tr key={post.post_id}>
+<tr key={post._id}>
 <td>{post.title}</td>
 <td>
-  <button className="edit-button" type="submit" onClick={() => {toEdit()}}>EDIT</button></td>
-<td><button className="delete-button" type="submit"onClick={DeletePost}>DELETE</button></td>
+  <button className="edit-button" type="submit" onClick={() => {toEdit(post._id)}}>EDIT</button></td>
+<td><button className="delete-button" type="submit" onClick={() => {DeletePost(post._id)}}>DELETE</button></td>
 </tr>
   ))}
 
