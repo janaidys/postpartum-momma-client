@@ -1,5 +1,14 @@
 /* [MEET THE TEAM CONTAINER] */
-.anaidys-photo {
+.container1 {
+    border:solid 3px var(--forest-green);
+    border-radius: 15px;
+    background-color:var(--cream);
+    margin: 30px; 
+    padding: 20px;
+    width: 100%;
+  }
+
+.mom-photo {
     width: 150px;
     clip-path: circle(40% at 50% 50%);
 }

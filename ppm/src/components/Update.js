@@ -28,7 +28,7 @@ const handleUpdateSubmit = (event) => {
       }
       fetch(`https://postpartum-momma.onrender.com/api/blog/${postID}`, {
         method: "PUT",
-        body: JSON.stringify
+        body: JSON.stringify(body)
       })
         .then((response) => response.json())
         .then((result) => console.log(result), navigate("/admin"))
@@ -39,10 +39,10 @@ return (
       <div className="container1">
         <h1 className="page-title">Update Blog Post</h1>
         <form onSubmit = {handleUpdateSubmit} >
-        <span className="banner">
+        <div className="banner">
             <input type="file" accept="image/*" id="banner-upload"/>
             <label htmlFor="banner-upload" className="banner-upload-btn"><i className="fa fa-upload" aria-hidden="true"></i></label>
-        </span>
+        </div>
         <br/>
         <span className="blog">
             <textarea type="text" className="title" placeholder="Blog title..."></textarea>

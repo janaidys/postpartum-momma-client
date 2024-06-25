@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 const Signup = ({user, setUser}) => {
 	const navigate = useNavigate();
 
-	const handleSignupSumbit = (event) => {
+	const handleSignupSubmit = (event) => {
 		event.preventDefault();
 		console.log("This method ran...")
 		const body = {
@@ -16,32 +16,33 @@ const Signup = ({user, setUser}) => {
 		  password: event.target.password.value
 		}
 
-		fetch(`https://postpartum-momma.onrender.com/api/blog/login/local`, {
+		fetch(`http://localhost:3000/signup`, {
         method: "POST",
-        body: JSON.stringify
+        body: JSON.stringify(body)
       })
         .then((response) => response.json())
-        .then((result) => console.log(result), navigate("/admin"))
+        .then((result) => console.log(result))
         .catch((error)=> console.log(error))
+		navigate("/login")
 	}
     return (
       <div>
         <span className="limiter">
 		<span className="container-login">
 			<span className="wrap-login">
-				<form className="login-form">
+				<form onSubmit={handleSignupSubmit}className="login-form">
 					<span className="login-form-title ">
 						SIGN-UP
 					</span>
 					
 					<span className="wrap-input">
-						<input className="input" type="text" name="name1"/>
+						<input className="input" type="text" name="firstName"/>
 						<span className="focus-input"></span>
 						<span className="label-input">First name</span>
 					</span>
 
                     <span className="wrap-input">
-						<input className="input" type="text" name="name2"/>
+						<input className="input" type="text" name="lastName"/>
 						<span className="focus-input"></span>
 						<span className="label-input">Last name</span>
 					</span>
@@ -54,7 +55,7 @@ const Signup = ({user, setUser}) => {
 					
 					
 					<span className="wrap-input" data-validate="Password is required">
-						<input className="input" type="password" name="pass"/>
+						<input className="input" type="password" name="password"/>
 						<span className="focus-input"></span>
 						<span className="label-input">Password</span>
 					</span>
@@ -63,14 +64,14 @@ const Signup = ({user, setUser}) => {
 			
 
 					<span className="container-login-form-btn">
-						<button className="login-form-btn">
+						<button type ="submit" className="login-form-btn">
 							SIGN-UP
 						</button>
 					</span>
 
 				
                     <span className="sign-up">
-						<Link className="txt2">
+						<Link to="/login" className="txt2">
 							Already a member? Log In
                         </Link>
 					</span>

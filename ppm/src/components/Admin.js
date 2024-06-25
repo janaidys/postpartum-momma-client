@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import '../Admin.css';
 
 const Admin = () => {
   const [posts, setPosts] = useState([]);
@@ -29,14 +30,14 @@ const Admin = () => {
 
     return (
       <div>
-        <span className="container1">
+        <div className="container1">
     
-    <span className="table-title">
+    <div className="table-title">
     <h1 className="admin-header">ADMIN PAGE</h1>
     <button className="edit-button" type="submit">ADD A NEW BLOG POST</button>
-</span>
+</div>
     
-<span>
+<div>
 <table className="blog-post-table">
 <thead>  
     <tr>
@@ -59,8 +60,8 @@ const Admin = () => {
 
 </tbody>
 </table>
-</span> 
-</span>
+</div> 
+</div>
       </div>
     )
   }

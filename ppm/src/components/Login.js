@@ -13,21 +13,22 @@ const Login = ({user, setUser}) => {
       email:event.target.email.value,
       password: event.target.password.value
     }
-  }
-  fetch(`https://postpartum-momma.onrender.com/api/blog/login/local`, {
+  
+  fetch(`http://localhost:3000/login/local`, {
         method: "POST",
-        body: JSON.stringify
+        body: JSON.stringify(body)
       })
         .then((response) => response.json())
-        .then((result) => console.log(result), navigate("/admin"))
+        .then((result) => console.log(result))
         .catch((error)=> console.log(error))
-  
+        navigate("/admin")
+    }
   return (
     <div>
       <span className="limiter">
         <span className="container-login">
           <span className="wrap-login">
-            <form className="login-form" onSubmitt={handleLoginSubmit}>
+            <form className="login-form" onSubmit={handleLoginSubmit}>
               <span className="login-form-title ">LOGIN</span>
 
               <span className="wrap-input">
@@ -37,7 +38,7 @@ const Login = ({user, setUser}) => {
               </span>
 
               <span className="wrap-input" data-validate="Password is required">
-                <input className="input" type="password" name="pass" />
+                <input className="input" type="password" name="password" />
                 <span className="focus-input"></span>
                 <span className="label-input">Password</span>
               </span>
