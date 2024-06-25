@@ -1,21 +1,22 @@
 import React from 'react';
 import bioData from "../data/bios"
+import '../About.css'
 
 const About = () => {
     return (
       <div>
 
-        <div className="origin-story">
+<div className="origin-story">
     <h2>How it All Began</h2>
 <div className=" origin-text">
 <p>Postpartum Momma was founded by Anaidys Jimenez as a forum to provided resources during the postpartum period of motherhood. In her first few months postpartum, Anaidys realized that not only was being a new mom difficult; it was isolating. She struggled with anxious and depressive thoughts that kept her from being fully present for herself and her baby. By the end of the day she was unbathed, with streaks of spit up on her robe, and tears streaming down her cheeks as she held her sleeping baby. In the middle of a 3am nursing session, when it felt like everyone but her was sound asleep, she wondered if she was really the only one feeling this way. Postpartum Momma is here to empower your motherhood journey and remind you that you are not alone in this! </p>
 </div>
 </div>
 
-<div class="about-us"> 
+<div className="about-us"> 
     <h2>Meet the Team</h2>
     {bioData.map((bio) => (
-        <div className="team-blurb">
+        <div key={bio.id}className="team-blurb">
         <div className="name-photo">
             <div className="momma-photo">
             <img src={`/images/${bio.image}`} className="mom-photo" alt={bio.name}/>

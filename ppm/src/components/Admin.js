@@ -2,7 +2,14 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import '../Admin.css';
 
-const Admin = () => {
+const Admin = (props) => {
+  const navigate = useNavigate();
+  const toCreate = () => {
+    navigate(`/create`)
+  }
+  const  toEdit = (post) => {
+    navigate('/update', {state:post, replace:true})
+  }
   const [posts, setPosts] = useState([]);
   useEffect(() => { 
     fetch(`https://postpartum-momma.onrender.com/api/blog`) 
@@ -17,6 +24,15 @@ const Admin = () => {
   useEffect(()=> {
     console.log(posts)
   }, [posts]);
+
+  function EditPost(postID) {
+    fetch(`https://codesquad-comics-rzef.onrender.com/api/blog/update/${postID}`, {
+      method: "POST",
+    })
+      .then((response) => response.json())
+      .then((result) => console.log(result))
+      .catch((error)=> console.log(error))
+  }
 
   function DeletePost(postID) {
     fetch(`https://codesquad-comics-rzef.onrender.com/api/blog/delete/${postID}`, {
@@ -34,7 +50,7 @@ const Admin = () => {
     
     <div className="table-title">
     <h1 className="admin-header">ADMIN PAGE</h1>
-    <button className="edit-button" type="submit">ADD A NEW BLOG POST</button>
+    <button onClick={() => {toCreate()}}className="edit-button" type="submit">ADD A NEW BLOG POST</button>
 </div>
     
 <div>
@@ -52,7 +68,7 @@ const Admin = () => {
 <tr key={post.post_id}>
 <td>{post.title}</td>
 <td>
-  <button className="edit-button" type="submit">EDIT</button></td>
+  <button className="edit-button" type="submit" onClick={EditPost}>EDIT</button></td>
 <td><button className="delete-button" type="submit"onClick={DeletePost}>DELETE</button></td>
 </tr>
   ))}

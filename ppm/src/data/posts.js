@@ -14,7 +14,7 @@ const bedtime = {
     title: "Restore your Core",
     blurb: "Mommy pooch, Do I even know her?",
     article:
-      "Have you ever heard of the mom pooch? Well this is pooch is the result of your abs separating to allow your baby to grow with ample space as your uterus expanded. The thing is...now you're not pregnant anymore, but your abs are still separated. Here is an infographic from the Mutu System, who specialize in helping women heal their bodies.",
+      "Let me just start off by saying that this is not the kind of blog post that is going to try and pressure you to 'snapback' to your pre-pregnancy body as quickly as possible. I don't have any tips, tricks, tummy creams, or even an exercise regiment for you. I just wanted to let you know that it's okay to give yourself and your body grace as you navigate healing the dinner plate sized wound left behind in your uterus by baby and the placenta. Many mommas are unaware that as this wound attempts to heal over the course of 6 months (minimum) your core muscles and pelvic floor are also in dire need of healing. You just grew an entire human being and they needed some space to grow. Where there wasn't space they created space by pushing your ab muscles out of the way. This caused you to have diastasis recti. Even after baby is no longer in your womb, your muscles are going to need some gentle nudging to getting back to where they once were. Many women that complain of back pains, pelvic pains, c-section scar area pains are going through this because they haven't healed their diastasis. Here is an infographic from the Mutu System, who specialize in helping women heal their bodies. I hope that as we learn more about our bodies we are able to give it the TLC it deserves.",
     upload: "Diastasis101.jpeg",
   };
   
@@ -23,12 +23,8 @@ const bedtime = {
     banner: "tummy-time.jpeg",
     title: "Play Kits",
     blurb: "Play is such an integral part of your baby's development. But how do I play with my baby? These kits take out all the guessing.",
-    article: [
-      "Playtime is super important for baby's cognitive development. The way they begin to play with their caretakers will begin to shape how they are able to navigate the world around them. Here are some of our favorite toy subscription boxes. These companies do the research so that you do not have to!.",
-      "The Lovevery play kits are montessori inspired toy subscription boxes. Each box is backed by thorough research to ensure that your baby is reaching their developmental milestones through play.",
-      "The Lalo Play boxes cater to your child's developmental needs as they continue to learn and grow. For the momma's that are struggling to figure out what to do with your baby all day; Lalo provides play guides with each box to help you break from the monotonous routine and explore new ways to play with your baby.",
-    ],
-    upload: ["lalo-play-box.png", "lovevery.jpeg"],
+    article: "Playtime is super important for baby's cognitive development. The way they begin to play with their caretakers will begin to shape how they are able to navigate the world around them. Here are some of our favorite toy subscription boxes. These companies do the research so that you do not have to! The Lovevery play kits are montessori inspired toy subscription boxes. Each box is backed by thorough research to ensure that your baby is reaching their developmental milestones through play. Luca and I have enjoyed playing with our bi-montly subscription toys they come equipt with a play guide to give you ideas for how to best introduce each toy to your baby. I can say for a fact that these toys have helped my little one reached key milestones like discovering his feet with the jingle socks, prolonging his tummy time with the mirror, or improving his fine motor skills with the tissue box.",
+    upload: "lovevery.jpeg"
   };
   
   const babyFormula = {

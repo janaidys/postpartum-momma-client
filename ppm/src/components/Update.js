@@ -3,7 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import blogData from "../data/posts";
 
 
-const Update = () => {
+const Update = ({}) => {
   const navigate = useNavigate();
   const {postID} = useParams();
   const [post, setPost] = useState([]);
