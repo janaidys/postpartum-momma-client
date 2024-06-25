@@ -33,8 +33,8 @@ const Create = () => {
         <h1 className="page-title">Create Blog Post</h1>
         <form onSubmit = {handleCreateSubmit} >
         <div className="banner">
-            <input name="banner" type="file" accept="image/*" id="banner-upload"/>
-            <label htmlFor="banner-upload" className="banner-upload-btn"><i className="fa fa-upload" aria-hidden="true"></i></label>
+            <input name="banner" type={"file"} accept="image/*" id="banner-upload" style={{visibility:"hidden"}}/>
+            <label htmlFor="banner-upload" className="banner-upload-btn"><FontAwesomeIcon icon= {faUpload}/></label>
         </div>
         <br/>
         <span className="blog">

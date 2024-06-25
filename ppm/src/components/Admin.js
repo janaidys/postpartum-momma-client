@@ -25,15 +25,6 @@ const Admin = (props) => {
     console.log(posts)
   }, [posts]);
 
-  function EditPost(postID) {
-    fetch(`https://codesquad-comics-rzef.onrender.com/api/blog/update/${postID}`, {
-      method: "POST",
-    })
-      .then((response) => response.json())
-      .then((result) => console.log(result))
-      .catch((error)=> console.log(error))
-  }
-
   function DeletePost(postID) {
     fetch(`https://codesquad-comics-rzef.onrender.com/api/blog/delete/${postID}`, {
     method: "DELETE",
@@ -68,7 +59,7 @@ const Admin = (props) => {
 <tr key={post.post_id}>
 <td>{post.title}</td>
 <td>
-  <button className="edit-button" type="submit" onClick={EditPost}>EDIT</button></td>
+  <button className="edit-button" type="submit" onClick={() => {toEdit()}}>EDIT</button></td>
 <td><button className="delete-button" type="submit"onClick={DeletePost}>DELETE</button></td>
 </tr>
   ))}
