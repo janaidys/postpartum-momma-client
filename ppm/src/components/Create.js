@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import '../Create.css'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faUpload} from "@fortawesome/free-solid-svg-icons";
+import '../mediaQueries.css'
 
 
 const Create = () => {

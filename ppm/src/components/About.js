@@ -1,6 +1,8 @@
 import React from 'react';
 import bioData from "../data/bios"
 import '../About.css'
+import '../mediaQueries.css'
+
 
 const About = () => {
     return (

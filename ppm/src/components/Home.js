@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import {Link, useNavigate} from 'react-router-dom';
 // import '../index';
 import '../Home.css'
+import '../mediaQueries.css'
 
 const Home = (props) => {
   const navigate = useNavigate();

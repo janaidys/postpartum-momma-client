@@ -1,6 +1,7 @@
 import React from 'react';
 import '../Posts.css'
 import {useLocation} from 'react-router-dom';
+import '../mediaQueries.css'
 
 const Post = () => {
   const location = useLocation();

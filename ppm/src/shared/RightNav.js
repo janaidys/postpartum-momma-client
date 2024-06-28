@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import { Link } from 'react-router-dom'
 import '../index.css';
 import '../Header.css';
-import '../RightNav.css'
 import '../mediaQueries.css'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBars} from "@fortawesome/free-solid-svg-icons";

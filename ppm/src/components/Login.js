@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom"
 import { Link } from 'react-router-dom'
 import '../Login.css';
+import '../mediaQueries.css'
 
 const Login = ({user, setUser}) => {
   const navigate = useNavigate();
@@ -19,7 +20,9 @@ const Login = ({user, setUser}) => {
         body: JSON.stringify(body)
       })
         .then((response) => response.json())
-        .then((result) => console.log(result))
+        .then((result) => {console.log(result)
+        localStorage.setItem('user'), JSON.stringify(result.data)
+        setUser(result.data)})
         .catch((error)=> console.log(error))
         navigate("/admin")
     }

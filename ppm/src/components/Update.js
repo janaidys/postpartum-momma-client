@@ -3,6 +3,7 @@ import { useParams, useNavigate, useLocation } from "react-router-dom";
 import blogData from "../data/posts";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUpload } from "@fortawesome/free-solid-svg-icons";
+import '../mediaQueries.css'
 
 const Update = ({}) => {
   const navigate = useNavigate();

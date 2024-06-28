@@ -4,6 +4,7 @@ import RightNav from './RightNav';
 import { useNavigate } from "react-router-dom";
 import '../index.css';
 import '../Header.css'
+import '../mediaQueries.css'
 
 
 const Header = ({user, setUser}) => {

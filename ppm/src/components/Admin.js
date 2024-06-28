@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import '../Admin.css';
+import '../mediaQueries.css'
 
 const Admin = (props) => {
   const navigate = useNavigate();
