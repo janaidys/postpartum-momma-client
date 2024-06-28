@@ -19,6 +19,10 @@ const Signup = ({user, setUser}) => {
 
 		fetch(`http://localhost:3000/signup`, {
         method: "POST",
+		headers: {
+			'Content-Type':
+				'application/json'
+		},
         body: JSON.stringify(body)
       })
         .then((response) => response.json())

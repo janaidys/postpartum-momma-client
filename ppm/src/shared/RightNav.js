@@ -24,10 +24,10 @@ const RightNav = () => {
                     <li className=" nav-list"><Link to="/about">ABOUT US</Link></li>
                   <span>
                     
-                    <li className ="nav-list"><Link to="/login">LOGIN</Link></li>
+                    <li className ="nav-list"><Link to="/login">LOGIN/SIGNUP</Link></li>
                   </span>
 
-                    <li className ="nav-list"><Link to="/signup">SIGNUP</Link></li>
+                    <li className ="nav-list"><button className="login-form-btn">LOGOUT</button></li>
 
                 </ul>
                 </span>

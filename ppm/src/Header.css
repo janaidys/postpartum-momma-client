@@ -12,6 +12,8 @@ header {
 }
  
 .nav-list {
+
+    text-align: center;
     display: inline-block;
     margin: 0 110px; 
     padding-bottom: 10px;

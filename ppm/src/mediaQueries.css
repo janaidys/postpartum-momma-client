@@ -47,6 +47,7 @@
   .login {
     display: none;
   }
+
   
   .fa-bars {
     display:block;
@@ -55,6 +56,16 @@
     right:30px;
     color: var(--sage)
   
+  }
+  
+  .nav-list {
+    display: flex;
+    justify-content:center;
+    text-align: center;
+  }
+
+  .login-form-btn {
+    width: fit-content;
   }
   
     /* --------------------------------------------------

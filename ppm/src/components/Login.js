@@ -14,14 +14,18 @@ const Login = ({user, setUser}) => {
       email:event.target.email.value,
       password: event.target.password.value
     }
-  
+  console.log(body.email)
   fetch(`http://localhost:3000/login/local`, {
         method: "POST",
+        headers: {
+        'Content-Type':
+				'application/json'
+        },
         body: JSON.stringify(body)
       })
         .then((response) => response.json())
         .then((result) => {console.log(result)
-        localStorage.setItem('user'), JSON.stringify(result.data)
+        localStorage.setItem('user', JSON.stringify(result.data))
         setUser(result.data)})
         .catch((error)=> console.log(error))
         navigate("/admin")
