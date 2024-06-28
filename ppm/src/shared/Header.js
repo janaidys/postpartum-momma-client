@@ -1,23 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import RightNav from './RightNav';
-import { useNavigate } from "react-router-dom";
 import '../index.css';
 import '../Header.css'
 import '../mediaQueries.css'
 
 
-const Header = ({user, setUser}) => {
-  const navigate = useNavigate();
+const Header = () => {
 
-  const handleLogout = (event) => {
-    fetch(`https://postpartum-momma.onrender.com/api/blog/admin`, {
-      method: "GET",
-    })
-      .then((response) => response.json())
-      .then((result) => setUser({}), localStorage.removeItem("user"), navigate("/"))
-      .catch((error)=> navigate("/admin"))
-  }
     return (
       <div>
         <header>
