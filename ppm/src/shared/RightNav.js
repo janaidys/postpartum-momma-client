@@ -12,7 +12,7 @@ const RightNav = ({user, setUser}) => {
   const navigate = useNavigate();
 
   const handleLogout = (event) => {
-    fetch(`https://postpartum-momma.onrender.com/api/blog/admin`, {
+    fetch(`http://localhost:3000/api/blog/admin`, {
       method: "GET",
     })
       .then((response) => response.json())
